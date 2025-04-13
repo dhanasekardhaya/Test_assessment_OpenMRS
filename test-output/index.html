@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>D:\Cucumbar\OpenMRS\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.runner.TestRunner" hash-for-method="runScenario(&quot;To valid the login Functionality with valid credentials&quot;, &quot;Optional[To vaild the login functionalit...)">runScenario("To valid the login Functionality with valid credentials", "Optional[To vaild the login functionalit...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.runner.TestRunner" hash-for-method="runScenario(&quot;Delete a patient and ensure the patient is no longer listed&quot;, &quot;Optional[Delete Patient Record and V...)">runScenario("Delete a patient and ensure the patient is no longer listed", "Optional[Delete Patient Record and V...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.runner.TestRunner" hash-for-method="runScenario(&quot;Add past visit and verify future dates are not selectable&quot;, &quot;Optional[Manage and Verify Patient Vis...)">runScenario("Add past visit and verify future dates are not selectable", "Optional[Manage and Verify Patient Vis...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.runner.TestRunner" hash-for-method="runScenario(&quot;Verify the dashboard after logging in with valid credentials&quot;, &quot;Optional[Validate the dashboard pag...)">runScenario("Verify the dashboard after logging in with valid credentials", "Optional[Validate the dashboard pag...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.runner.TestRunner" hash-for-method="runScenario(&quot;Validate the register a patient with demographic and contact information&quot;, &quot;Optional[The user Regis...)">runScenario("Validate the register a patient with demographic and contact information", "Optional[The user Regis...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.runner.TestRunner" hash-for-method="runScenario(&quot;Merge visits and verify recent visit tags&quot;, &quot;Optional[Manage and Verify Patient Visits]&quot;)">runScenario("Merge visits and verify recent visit tags", "Optional[Manage and Verify Patient Visits]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.runner.TestRunner" hash-for-method="runScenario(&quot;Verify patient age is correctly&quot;, &quot;Optional[To validate the patient age in system based]&quot;)">runScenario("Verify patient age is correctly", "Optional[To validate the patient age in system based]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.runner.TestRunner" hash-for-method="runScenario(&quot;Uploading a valid attachment&quot;, &quot;Optional[Upload patient Attachement]&quot;)">runScenario("Uploading a valid attachment", "Optional[Upload patient Attachement]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.runner.TestRunner" hash-for-method="runScenario(&quot;Verify uploaded attachment and recent visit entry&quot;, &quot;Optional[Patient Attachment uploaded Verificat...)">runScenario("Verify uploaded attachment and recent visit entry", "Optional[Patient Attachment uploaded Verificat...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.runner.TestRunner" hash-for-method="runScenario(&quot;Calculate and verify BMI after entering height and weight&quot;, &quot;Optional[BMI Calculation in Patient Vi...)">runScenario("Calculate and verify BMI after entering height and weight", "Optional[BMI Calculation in Patient Vi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To valid the login Functionality with valid credentials&quot;, &quot;Optional[To vaild the login functionalit...)">
+                  </a> <!-- runScenario("To valid the login Functionality with valid credentials", "Optional[To vaild the login functionalit...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To valid the login Functionality with valid credentials", "Optional[To vaild the login functionality of OpenMRS]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Delete a patient and ensure the patient is no longer listed&quot;, &quot;Optional[Delete Patient Record and V...)">
+                  </a> <!-- runScenario("Delete a patient and ensure the patient is no longer listed", "Optional[Delete Patient Record and V...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Delete a patient and ensure the patient is no longer listed", "Optional[Delete Patient Record and Verify Deletion]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Add past visit and verify future dates are not selectable&quot;, &quot;Optional[Manage and Verify Patient Vis...)">
+                  </a> <!-- runScenario("Add past visit and verify future dates are not selectable", "Optional[Manage and Verify Patient Vis...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Add past visit and verify future dates are not selectable", "Optional[Manage and Verify Patient Visits]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify the dashboard after logging in with valid credentials&quot;, &quot;Optional[Validate the dashboard pag...)">
+                  </a> <!-- runScenario("Verify the dashboard after logging in with valid credentials", "Optional[Validate the dashboard pag...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify the dashboard after logging in with valid credentials", "Optional[Validate the dashboard page]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate the register a patient with demographic and contact information&quot;, &quot;Optional[The user Regis...)">
+                  </a> <!-- runScenario("Validate the register a patient with demographic and contact information", "Optional[The user Regis...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate the register a patient with demographic and contact information", "Optional[The user Register a new patient in OpenMRS]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Merge visits and verify recent visit tags&quot;, &quot;Optional[Manage and Verify Patient Visits]&quot;)">
+                  </a> <!-- runScenario("Merge visits and verify recent visit tags", "Optional[Manage and Verify Patient Visits]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Merge visits and verify recent visit tags", "Optional[Manage and Verify Patient Visits]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify patient age is correctly&quot;, &quot;Optional[To validate the patient age in system based]&quot;)">
+                  </a> <!-- runScenario("Verify patient age is correctly", "Optional[To validate the patient age in system based]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify patient age is correctly", "Optional[To validate the patient age in system based]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Uploading a valid attachment&quot;, &quot;Optional[Upload patient Attachement]&quot;)">
+                  </a> <!-- runScenario("Uploading a valid attachment", "Optional[Upload patient Attachement]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Uploading a valid attachment", "Optional[Upload patient Attachement]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify uploaded attachment and recent visit entry&quot;, &quot;Optional[Patient Attachment uploaded Verificat...)">
+                  </a> <!-- runScenario("Verify uploaded attachment and recent visit entry", "Optional[Patient Attachment uploaded Verificat...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify uploaded attachment and recent visit entry", "Optional[Patient Attachment uploaded Verification]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Calculate and verify BMI after entering height and weight&quot;, &quot;Optional[BMI Calculation in Patient Vi...)">
+                  </a> <!-- runScenario("Calculate and verify BMI after entering height and weight", "Optional[BMI Calculation in Patient Vi...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Calculate and verify BMI after entering height and weight", "Optional[BMI Calculation in Patient Vitals]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Cucumbar\OpenMRS\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.utils.SuiteSetup&quot;/&gt;
+      &lt;class name=&quot;org.runner.TestRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'org.runner.TestRunner')
+data.setCell(0, 3, 33285);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'org.runner.TestRunner')
+data.setCell(1, 3, 22524);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'org.runner.TestRunner')
+data.setCell(2, 3, 14495);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'org.runner.TestRunner')
+data.setCell(3, 3, 11252);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'org.runner.TestRunner')
+data.setCell(4, 3, 8849);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'org.runner.TestRunner')
+data.setCell(5, 3, 6836);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'org.runner.TestRunner')
+data.setCell(6, 3, 6011);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'org.runner.TestRunner')
+data.setCell(7, 3, 5938);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'org.runner.TestRunner')
+data.setCell(8, 3, 5149);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'org.runner.TestRunner')
+data.setCell(9, 3, 3710);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.utils.SuiteSetup</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.runner.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">10827 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("To valid the login Functionality with valid credentials", "Optional[To vaild the login functionalit...)</span>
+                <span class="method-start">11947 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify the dashboard after logging in with valid credentials", "Optional[Validate the dashboard pag...)</span>
+                <span class="method-start">18786 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate the register a patient with demographic and contact information", "Optional[The user Regis...)</span>
+                <span class="method-start">24804 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify patient age is correctly", "Optional[To validate the patient age in system based]")</span>
+                <span class="method-start">30744 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Uploading a valid attachment", "Optional[Upload patient Attachement]")</span>
+                <span class="method-start">41998 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify uploaded attachment and recent visit entry", "Optional[Patient Attachment uploaded Verificat...)</span>
+                <span class="method-start">64527 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Calculate and verify BMI after entering height and weight", "Optional[BMI Calculation in Patient Vi...)</span>
+                <span class="method-start">69677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Merge visits and verify recent visit tags", "Optional[Manage and Verify Patient Visits]")</span>
+                <span class="method-start">102963 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Add past visit and verify future dates are not selectable", "Optional[Manage and Verify Patient Vis...)</span>
+                <span class="method-start">117459 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Delete a patient and ensure the patient is no longer listed", "Optional[Delete Patient Record and V...)</span>
+                <span class="method-start">121170 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">130020 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.utils.SuiteSetup</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">130317 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
