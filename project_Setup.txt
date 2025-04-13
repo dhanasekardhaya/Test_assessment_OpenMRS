@@ -1,0 +1,32 @@
+========== Project Overview ==========
+1) Project Setup:
+
+The project is set up using Maven for dependency management and build automation.
+
+2) Package Dependencies:
+
+selenium-java – version 3.141.59
+
+testng – version 6.14.3
+
+cucumber-java – version 6.10.4
+
+extent-reports – version 5.0.9
+
+3) System Configuration:
+
+Operating System: Windows 10 (32-bit)
+
+Java Version: 1.8
+
+4) Important Project Directories:
+
+test/resources/Reports/Extents – Stores the Extent Reports
+
+test/resources/Reports/Screenshot – Stores screenshots taken during test execution
+
+test/resources/Reports/Fileupload – Stores uploaded test files
+
+5) Additional Support:
+
+A video reference has also been attached to demonstrate the execution process.
