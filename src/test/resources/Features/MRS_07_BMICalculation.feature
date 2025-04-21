@@ -1,3 +1,4 @@
+@dashboard
 Feature: BMI Calculation in Patient Vitals
 
   Scenario: Calculate and verify BMI after entering height and weight

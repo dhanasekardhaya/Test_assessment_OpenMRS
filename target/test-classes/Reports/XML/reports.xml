@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="131.515">
-<testcase classname="To vaild the login functionality of OpenMRS" name="To valid the login Functionality with valid credentials" time="5.07">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="192.963">
+<testcase classname="To vaild the login functionality of OpenMRS" name="To valid the login Functionality with valid credentials" time="6.699">
 <system-out><![CDATA[Given The user should be in login page......................................passed
 When The user has to fill the username "Admin" and password "Admin123"......passed
 And The user select a location and click the login button...................passed
 Then The user should be redirected the dashboard page.......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Validate the dashboard page" name="Verify the dashboard after logging in with valid credentials" time="41.393">
+<testcase classname="Validate the dashboard page" name="Verify the dashboard after logging in with valid credentials" time="25.637">
 <system-out><![CDATA[Given The user is on the dashboard page.....................................passed
 When The user click the register a patient button...........................passed
 Then The user should be taken to the Register Patient page..................passed
 ]]></system-out>
 </testcase>
-<testcase classname="The user Register a new patient in OpenMRS" name="Validate the register a patient with demographic and contact information" time="5.407">
+<testcase classname="The user Register a new patient in OpenMRS" name="Validate the register a patient with demographic and contact information" time="4.281">
 <system-out><![CDATA[When The user click on Register a patient...................................passed
 And The user has fill to following details..................................passed
 Then The user should see the confrim page with the entered patient details..passed
 ]]></system-out>
 </testcase>
-<testcase classname="To validate the patient age in system based" name="Verify patient age is correctly" time="9.795">
+<testcase classname="To validate the patient age in system based" name="Verify patient age is correctly" time="34.459">
 <system-out><![CDATA[Given The user should be in Patient details page............................passed
 When The user should be correctly calculated based on data of birth "23 November 1992".passed
 Then validate the given input and output are matches........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Upload patient Attachement" name="Uploading a valid attachment" time="21.618">
+<testcase classname="Upload patient Attachement" name="Uploading a valid attachment" time="33.792">
 <system-out><![CDATA[Given The user on the patient's dashboard...................................passed
 When The user click the start a vist and confrim............................passed
 And The user validate the text in alert "Start a visit".....................passed
@@ -34,13 +34,37 @@ And The user has upload a valid file (e.g, JPEG, PNG or PDF)................pass
 Then The user see a success message confrim the upload "The attachment was successfully uploaded.".passed
 ]]></system-out>
 </testcase>
-<testcase classname="Patient Attachment uploaded Verification" name="Verify uploaded attachment and recent visit entry" time="4.586">
-<system-out><![CDATA[Given The user navigates back to the patient details page...................passed
+<testcase classname="Patient Attachment uploaded Verification" name="Verify uploaded attachment and recent visit entry" time="7.986">
+<failure message="stale element reference: stale element not found&#10;  (Session info: chrome=135.0.7049.96)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-28U849G', ip: '192.168.1.18', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_202'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61661}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: cc7011a8c8adbb8252488869f703037d" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[Given The user navigates back to the patient details page...................passed
 Then The uploaded attachment should be visible in the attachment section....passed
-And A recent visit with today's date and tag "Attachment Upload" should be listed.passed
-]]></system-out>
+And A recent visit with today's date and tag "Attachment Upload" should be listed.failed
+
+StackTrace:
+org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=135.0.7049.96)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-28U849G', ip: '192.168.1.18', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61661}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cc7011a8c8adbb8252488869f703037d
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.utils.Baseclass.jsElementHighlighted(Baseclass.java:174)
+	at org.stepdefinitions.PatientAttachmentPage.a_recent_visit_with_today_s_date_and_tag_should_be_listed(PatientAttachmentPage.java:29)
+	at ✽.A recent visit with today's date and tag "Attachment Upload" should be listed(file:///D:/Cucumbar/OpenMRS/src/test/resources/features/MRS_06_paitentattachmentupload.feature:7)
+]]></failure>
 </testcase>
-<testcase classname="BMI Calculation in Patient Vitals" name="Calculate and verify BMI after entering height and weight" time="25.445">
+<testcase classname="BMI Calculation in Patient Vitals" name="Calculate and verify BMI after entering height and weight" time="47.094">
 <system-out><![CDATA[Given The user starts a new visit...........................................passed
 And The user navigates to the Capture Vitals section........................passed
 And The user enters height as "145" cm and weight as "87" kg................passed
@@ -51,7 +75,7 @@ Then The user should be redirected to the patient details page..............pass
 And The patient details should display height as "145" cm, weight as "87" kg, and the correct BMI.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Manage and Verify Patient Visits" name="Merge visits and verify recent visit tags" time="8.403">
+<testcase classname="Manage and Verify Patient Visits" name="Merge visits and verify recent visit tags" time="17.562">
 <system-out><![CDATA[Given the user is on the Patient Details page...............................passed
 When the user verifies that the Recent Visits section has two entries for today's date with tags "Vitals" and "Attachment Upload".passed
 And the user clicks on "Merge Visits".......................................passed
@@ -60,14 +84,14 @@ And the user clicks on the "Return" button..................................pass
 Then the Recent Visits section should display one entry for today's date with tags "Vitals, Attachment Upload".passed
 ]]></system-out>
 </testcase>
-<testcase classname="Manage and Verify Patient Visits" name="Add past visit and verify future dates are not selectable" time="3.687">
+<testcase classname="Manage and Verify Patient Visits" name="Add past visit and verify future dates are not selectable" time="7.329">
 <system-out><![CDATA[Given the user is on the Patient Details page...............................passed
 When the user clicks on "Add Past Visit"....................................passed
 Then the date picker should not allow selection of future dates.............passed
 And the user clicks on the "Cancel" button to return to the Patient Details page.passed
 ]]></system-out>
 </testcase>
-<testcase classname="Delete Patient Record and Verify Deletion" name="Delete a patient and ensure the patient is no longer listed" time="5.443">
+<testcase classname="Delete Patient Record and Verify Deletion" name="Delete a patient and ensure the patient is no longer listed" time="7.497">
 <system-out><![CDATA[Given the user clicks on Delete Patient.....................................passed
 And the user enters the reason for deletion as "Test".......................passed
 And the user clicks on the Confirm button...................................passed

@@ -1,13 +1,13 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-04-13T07:48:07.016Z",
+        "start_timestamp": "2025-04-21T01:13:14.707Z",
         "before": [
           {
             "result": {
-              "duration": 782000000,
+              "duration": 529000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 3,
+        "line": 4,
         "name": "To valid the login Functionality with valid credentials",
         "description": "",
         "id": "to-vaild-the-login-functionality-of-openmrs;to-valid-the-login-functionality-with-valid-credentials",
         "after": [
           {
             "result": {
-              "duration": 1239000000,
+              "duration": 742000000,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 263000000,
+              "duration": 301000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "The user should be in login page",
             "match": {
               "location": "org.stepdefinitions.LoginSteps.the_user_should_be_in_login_page()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 303000000,
+              "duration": 268000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "The user has to fill the username \"Admin\" and password \"Admin123\"",
             "match": {
               "arguments": [
@@ -69,10 +69,10 @@
           },
           {
             "result": {
-              "duration": 333000000,
+              "duration": 3502000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "The user select a location and click the login button",
             "match": {
               "location": "org.stepdefinitions.LoginSteps.the_user_select_a_location_and_click_the_login_button()"
@@ -81,15 +81,20 @@
           },
           {
             "result": {
-              "duration": 3351000000,
+              "duration": 17000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "The user should be redirected the dashboard page",
             "match": {
               "location": "org.stepdefinitions.LoginSteps.the_user_should_be_redirected_the_dashboard_page()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
           }
         ]
       }
@@ -99,17 +104,25 @@
     "id": "to-vaild-the-login-functionality-of-openmrs",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/MRS_01_login.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   },
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-04-13T07:48:13.409Z",
+        "start_timestamp": "2025-04-21T01:13:20.142Z",
         "before": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -117,14 +130,14 @@
             }
           }
         ],
-        "line": 3,
+        "line": 4,
         "name": "Verify the dashboard after logging in with valid credentials",
         "description": "",
         "id": "validate-the-dashboard-page;verify-the-dashboard-after-logging-in-with-valid-credentials",
         "after": [
           {
             "result": {
-              "duration": 202000000,
+              "duration": 210000000,
               "status": "passed"
             },
             "match": {
@@ -137,10 +150,10 @@
         "steps": [
           {
             "result": {
-              "duration": 81000000,
+              "duration": 313000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "The user is on the dashboard page",
             "match": {
               "location": "org.stepdefinitions.DashboardSteps.the_user_is_on_the_dashboard_page()"
@@ -149,10 +162,10 @@
           },
           {
             "result": {
-              "duration": 5670000000,
+              "duration": 10796000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "The user click the register a patient button",
             "match": {
               "location": "org.stepdefinitions.DashboardSteps.the_user_click_the_register_a_patient_button()"
@@ -161,15 +174,20 @@
           },
           {
             "result": {
-              "duration": 18000000,
+              "duration": 13000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "The user should be taken to the Register Patient page",
             "match": {
               "location": "org.stepdefinitions.DashboardSteps.the_user_should_be_taken_to_the_register_patient_page()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dashboard"
           }
         ]
       }
@@ -179,13 +197,22 @@
     "id": "validate-the-dashboard-page",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/MRS_02_dashboard.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@dashboard",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   },
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-04-13T07:48:19.450Z",
+        "start_timestamp": "2025-04-21T01:13:31.526Z",
         "before": [
           {
             "result": {
@@ -196,14 +223,14 @@
             }
           }
         ],
-        "line": 3,
+        "line": 4,
         "name": "Validate the register a patient with demographic and contact information",
         "description": "",
         "id": "the-user-register-a-new-patient-in-openmrs;validate-the-register-a-patient-with-demographic-and-contact-information",
         "after": [
           {
             "result": {
-              "duration": 270000000,
+              "duration": 241000000,
               "status": "passed"
             },
             "match": {
@@ -216,10 +243,10 @@
         "steps": [
           {
             "result": {
-              "duration": 15000000,
+              "duration": 17000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "The user click on Register a patient",
             "match": {
               "location": "org.stepdefinitions.RegisterSteps.the_user_click_on_register_a_patient()"
@@ -228,10 +255,10 @@
           },
           {
             "result": {
-              "duration": 5103000000,
+              "duration": 3478000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "The user has fill to following details",
             "match": {
               "location": "org.stepdefinitions.RegisterSteps.the_user_has_fill_to_following_details(io.cucumber.datatable.DataTable)"
@@ -338,10 +365,10 @@
           },
           {
             "result": {
-              "duration": 489000000,
+              "duration": 280000000,
               "status": "passed"
             },
-            "line": 22,
+            "line": 23,
             "name": "The user should see the confrim page with the entered patient details",
             "match": {
               "location": "org.stepdefinitions.RegisterSteps.the_user_should_see_the_confrim_page_with_the_entered_patient_details(io.cucumber.datatable.DataTable)"
@@ -446,6 +473,11 @@
             ],
             "keyword": "Then "
           }
+        ],
+        "tags": [
+          {
+            "name": "@dashboard"
+          }
         ]
       }
     ],
@@ -454,16 +486,26 @@
     "id": "the-user-register-a-new-patient-in-openmrs",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/MRS_03_registerPatient.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@dashboard",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   },
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-04-13T07:48:25.362Z",
+        "start_timestamp": "2025-04-21T01:13:35.582Z",
         "before": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -471,14 +513,14 @@
             }
           }
         ],
-        "line": 3,
+        "line": 4,
         "name": "Verify patient age is correctly",
         "description": "",
         "id": "to-validate-the-patient-age-in-system-based;verify-patient-age-is-correctly",
         "after": [
           {
             "result": {
-              "duration": 329000000,
+              "duration": 205000000,
               "status": "passed"
             },
             "match": {
@@ -491,10 +533,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 2000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "The user should be in Patient details page",
             "match": {
               "location": "org.stepdefinitions.PatientageSteps.the_user_should_be_in_patient_details_page()"
@@ -503,10 +545,10 @@
           },
           {
             "result": {
-              "duration": 10892000000,
+              "duration": 14843000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "The user should be correctly calculated based on data of birth \"23 November 1992\"",
             "match": {
               "arguments": [
@@ -521,14 +563,20 @@
           },
           {
             "result": {
+              "duration": 47000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "validate the given input and output are matches",
             "match": {
               "location": "org.stepdefinitions.PatientageSteps.validate_the_given_input_and_output_are_matches()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dashboard"
           }
         ]
       }
@@ -538,16 +586,26 @@
     "id": "to-validate-the-patient-age-in-system-based",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/MRS_04_calculatepatientage.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@dashboard",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   },
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-04-13T07:48:36.626Z",
+        "start_timestamp": "2025-04-21T01:13:50.705Z",
         "before": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -555,14 +613,14 @@
             }
           }
         ],
-        "line": 3,
+        "line": 4,
         "name": "Uploading a valid attachment",
         "description": "",
         "id": "upload-patient-attachement;uploading-a-valid-attachment",
         "after": [
           {
             "result": {
-              "duration": 425000000,
+              "duration": 337000000,
               "status": "passed"
             },
             "match": {
@@ -575,10 +633,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4000000,
+              "duration": 3000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "The user on the patient\u0027s dashboard",
             "match": {
               "location": "org.stepdefinitions.UploadAttachmentSteps.the_user_on_the_patient_s_dashboard()"
@@ -587,10 +645,10 @@
           },
           {
             "result": {
-              "duration": 321000000,
+              "duration": 171000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "The user click the start a vist and confrim",
             "match": {
               "location": "org.stepdefinitions.UploadAttachmentSteps.the_user_click_the_start_a_vist_and_confrim()"
@@ -599,10 +657,10 @@
           },
           {
             "result": {
-              "duration": 63000000,
+              "duration": 164000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "The user validate the text in alert \"Start a visit\"",
             "match": {
               "arguments": [
@@ -617,10 +675,10 @@
           },
           {
             "result": {
-              "duration": 9987000000,
+              "duration": 17805000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "The user navigate to the attachment section",
             "match": {
               "location": "org.stepdefinitions.UploadAttachmentSteps.the_user_navigate_to_the_attachment_section()"
@@ -629,10 +687,10 @@
           },
           {
             "result": {
-              "duration": 6839000000,
+              "duration": 6107000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "The user has upload a valid file (e.g, JPEG, PNG or PDF)",
             "match": {
               "location": "org.stepdefinitions.UploadAttachmentSteps.the_user_has_upload_a_valid_file_e_g_jpeg_png_or_pdf()"
@@ -641,10 +699,10 @@
           },
           {
             "result": {
-              "duration": 4840000000,
+              "duration": 10077000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "The user see a success message confrim the upload \"The attachment was successfully uploaded.\"",
             "match": {
               "arguments": [
@@ -657,6 +715,11 @@
             },
             "keyword": "Then "
           }
+        ],
+        "tags": [
+          {
+            "name": "@dashboard"
+          }
         ]
       }
     ],
@@ -665,13 +728,22 @@
     "id": "upload-patient-attachement",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/MRS_05_startvistupload.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@dashboard",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   },
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-04-13T07:48:59.139Z",
+        "start_timestamp": "2025-04-21T01:14:25.395Z",
         "before": [
           {
             "result": {
@@ -683,14 +755,14 @@
             }
           }
         ],
-        "line": 3,
+        "line": 4,
         "name": "Verify uploaded attachment and recent visit entry",
         "description": "",
         "id": "patient-attachment-uploaded-verification;verify-uploaded-attachment-and-recent-visit-entry",
         "after": [
           {
             "result": {
-              "duration": 308000000,
+              "duration": 8022000000,
               "status": "passed"
             },
             "match": {
@@ -703,10 +775,10 @@
         "steps": [
           {
             "result": {
-              "duration": 337000000,
+              "duration": 297000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "The user navigates back to the patient details page",
             "match": {
               "location": "org.stepdefinitions.PatientAttachmentPage.the_user_navigates_back_to_the_patient_details_page()"
@@ -715,10 +787,10 @@
           },
           {
             "result": {
-              "duration": 3388000000,
+              "duration": 219000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "The uploaded attachment should be visible in the attachment section",
             "match": {
               "location": "org.stepdefinitions.PatientAttachmentPage.the_uploaded_attachment_should_be_visible_in_the_attachment_section()"
@@ -727,10 +799,10 @@
           },
           {
             "result": {
-              "duration": 1087000000,
+              "duration": 84000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "A recent visit with today\u0027s date and tag \"Attachment Upload\" should be listed",
             "match": {
               "arguments": [
@@ -743,6 +815,11 @@
             },
             "keyword": "And "
           }
+        ],
+        "tags": [
+          {
+            "name": "@dashboard"
+          }
         ]
       }
     ],
@@ -751,13 +828,22 @@
     "id": "patient-attachment-uploaded-verification",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/MRS_06_paitentattachmentupload.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@dashboard",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   },
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-04-13T07:49:04.289Z",
+        "start_timestamp": "2025-04-21T01:14:34.057Z",
         "before": [
           {
             "result": {
@@ -769,14 +855,14 @@
             }
           }
         ],
-        "line": 3,
+        "line": 4,
         "name": "Calculate and verify BMI after entering height and weight",
         "description": "",
         "id": "bmi-calculation-in-patient-vitals;calculate-and-verify-bmi-after-entering-height-and-weight",
         "after": [
           {
             "result": {
-              "duration": 297000000,
+              "duration": 202000000,
               "status": "passed"
             },
             "match": {
@@ -789,10 +875,10 @@
         "steps": [
           {
             "result": {
-              "duration": 165000000,
+              "duration": 7000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "The user starts a new visit",
             "match": {
               "location": "org.stepdefinitions.BMICalculationPage.the_user_starts_a_new_visit()"
@@ -801,10 +887,10 @@
           },
           {
             "result": {
-              "duration": 15074000000,
+              "duration": 13575000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "The user navigates to the Capture Vitals section",
             "match": {
               "location": "org.stepdefinitions.BMICalculationPage.the_user_navigates_to_the_capture_vitals_section()"
@@ -813,10 +899,10 @@
           },
           {
             "result": {
-              "duration": 595000000,
+              "duration": 473000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "The user enters height as \"145\" cm and weight as \"87\" kg",
             "match": {
               "arguments": [
@@ -835,10 +921,10 @@
           },
           {
             "result": {
-              "duration": 231000000,
+              "duration": 182000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "The system should display the calculated BMI",
             "match": {
               "location": "org.stepdefinitions.BMICalculationPage.the_system_should_display_the_calculated_bmi()"
@@ -847,10 +933,10 @@
           },
           {
             "result": {
-              "duration": 200000000,
+              "duration": 155000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "The user saves the vitals form",
             "match": {
               "location": "org.stepdefinitions.BMICalculationPage.the_user_saves_the_vitals_form()"
@@ -859,10 +945,10 @@
           },
           {
             "result": {
-              "duration": 7185000000,
+              "duration": 7782000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "The user ends the visit",
             "match": {
               "location": "org.stepdefinitions.BMICalculationPage.the_user_ends_the_visit()"
@@ -871,10 +957,10 @@
           },
           {
             "result": {
-              "duration": 8148000000,
+              "duration": 14519000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "The user should be redirected to the patient details page",
             "match": {
               "location": "org.stepdefinitions.BMICalculationPage.the_user_should_be_redirected_to_the_patient_details_page()"
@@ -883,10 +969,10 @@
           },
           {
             "result": {
-              "duration": 1363000000,
+              "duration": 91000000,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "The patient details should display height as \"145\" cm, weight as \"87\" kg, and the correct BMI",
             "match": {
               "arguments": [
@@ -903,6 +989,11 @@
             },
             "keyword": "And "
           }
+        ],
+        "tags": [
+          {
+            "name": "@dashboard"
+          }
         ]
       }
     ],
@@ -911,16 +1002,26 @@
     "id": "bmi-calculation-in-patient-vitals",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/MRS_07_BMICalculation.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@dashboard",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   },
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-04-13T07:49:37.593Z",
+        "start_timestamp": "2025-04-21T01:15:11.070Z",
         "before": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -928,14 +1029,14 @@
             }
           }
         ],
-        "line": 3,
+        "line": 4,
         "name": "Merge visits and verify recent visit tags",
         "description": "",
         "id": "manage-and-verify-patient-visits;merge-visits-and-verify-recent-visit-tags",
         "after": [
           {
             "result": {
-              "duration": 307000000,
+              "duration": 270000000,
               "status": "passed"
             },
             "match": {
@@ -948,10 +1049,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3000000,
+              "duration": 2000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "the user is on the Patient Details page",
             "match": {
               "location": "org.stepdefinitions.ManageVerifyPatient.the_user_is_on_the_patient_details_page()"
@@ -960,10 +1061,10 @@
           },
           {
             "result": {
-              "duration": 230000000,
+              "duration": 153000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "the user verifies that the Recent Visits section has two entries for today\u0027s date with tags \"Vitals\" and \"Attachment Upload\"",
             "match": {
               "arguments": [
@@ -982,10 +1083,10 @@
           },
           {
             "result": {
-              "duration": 3630000000,
+              "duration": 2995000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "the user clicks on \"Merge Visits\"",
             "match": {
               "arguments": [
@@ -1000,10 +1101,10 @@
           },
           {
             "result": {
-              "duration": 599000000,
+              "duration": 4124000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "the user selects the two visits and clicks on \"Merge Selected Visits\"",
             "match": {
               "arguments": [
@@ -1018,10 +1119,10 @@
           },
           {
             "result": {
-              "duration": 8559000000,
+              "duration": 8690000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "the user clicks on the \"Return\" button",
             "match": {
               "arguments": [
@@ -1036,10 +1137,10 @@
           },
           {
             "result": {
-              "duration": 1118000000,
+              "duration": 88000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "the Recent Visits section should display one entry for today\u0027s date with tags \"Vitals, Attachment Upload\"",
             "match": {
               "arguments": [
@@ -1052,14 +1153,19 @@
             },
             "keyword": "Then "
           }
+        ],
+        "tags": [
+          {
+            "name": "@dashboard"
+          }
         ]
       },
       {
-        "start_timestamp": "2025-04-13T07:49:52.067Z",
+        "start_timestamp": "2025-04-21T01:15:27.423Z",
         "before": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "match": {
@@ -1067,14 +1173,14 @@
             }
           }
         ],
-        "line": 11,
+        "line": 12,
         "name": "Add past visit and verify future dates are not selectable",
         "description": "",
         "id": "manage-and-verify-patient-visits;add-past-visit-and-verify-future-dates-are-not-selectable",
         "after": [
           {
             "result": {
-              "duration": 360000000,
+              "duration": 230000000,
               "status": "passed"
             },
             "match": {
@@ -1087,9 +1193,10 @@
         "steps": [
           {
             "result": {
+              "duration": 3000000,
               "status": "passed"
             },
-            "line": 12,
+            "line": 13,
             "name": "the user is on the Patient Details page",
             "match": {
               "location": "org.stepdefinitions.ManageVerifyPatient.the_user_is_on_the_patient_details_page()"
@@ -1098,9 +1205,10 @@
           },
           {
             "result": {
+              "duration": 166000000,
               "status": "passed"
             },
-            "line": 13,
+            "line": 14,
             "name": "the user clicks on \"Add Past Visit\"",
             "match": {
               "arguments": [
@@ -1115,9 +1223,10 @@
           },
           {
             "result": {
+              "duration": 116000000,
               "status": "passed"
             },
-            "line": 14,
+            "line": 15,
             "name": "the date picker should not allow selection of future dates",
             "match": {
               "location": "org.stepdefinitions.ManageVerifyPatient.the_date_picker_should_not_allow_selection_of_future_dates()"
@@ -1126,10 +1235,10 @@
           },
           {
             "result": {
-              "duration": 3329000000,
+              "duration": 7422000000,
               "status": "passed"
             },
-            "line": 15,
+            "line": 16,
             "name": "the user clicks on the \"Cancel\" button to return to the Patient Details page",
             "match": {
               "arguments": [
@@ -1142,6 +1251,11 @@
             },
             "keyword": "And "
           }
+        ],
+        "tags": [
+          {
+            "name": "@dashboard"
+          }
         ]
       }
     ],
@@ -1150,13 +1264,22 @@
     "id": "manage-and-verify-patient-visits",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/MRS_08_Mangae_verify_patient.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@dashboard",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   },
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-04-13T07:49:55.786Z",
+        "start_timestamp": "2025-04-21T01:15:35.384Z",
         "before": [
           {
             "result": {
@@ -1167,14 +1290,14 @@
             }
           }
         ],
-        "line": 3,
+        "line": 4,
         "name": "Delete a patient and ensure the patient is no longer listed",
         "description": "",
         "id": "delete-patient-record-and-verify-deletion;delete-a-patient-and-ensure-the-patient-is-no-longer-listed",
         "after": [
           {
             "result": {
-              "duration": 252000000,
+              "duration": 209000000,
               "status": "passed"
             },
             "match": {
@@ -1190,7 +1313,7 @@
               "duration": 2000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "the user clicks on Delete Patient",
             "match": {
               "location": "org.stepdefinitions.DeletePage.the_user_clicks_on_delete_patient()"
@@ -1199,10 +1322,10 @@
           },
           {
             "result": {
-              "duration": 373000000,
+              "duration": 318000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "the user enters the reason for deletion as \"Test\"",
             "match": {
               "arguments": [
@@ -1217,10 +1340,10 @@
           },
           {
             "result": {
-              "duration": 152000000,
+              "duration": 125000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "the user clicks on the Confirm button",
             "match": {
               "location": "org.stepdefinitions.DeletePage.the_user_clicks_on_the_confirm_button()"
@@ -1229,10 +1352,10 @@
           },
           {
             "result": {
-              "duration": 1587000000,
+              "duration": 897000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "a toaster message should appear confirming the deletion",
             "match": {
               "location": "org.stepdefinitions.DeletePage.a_toaster_message_should_appear_confirming_the_deletion()"
@@ -1241,10 +1364,10 @@
           },
           {
             "result": {
-              "duration": 154000000,
+              "duration": 63000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "the user is redirected to the Find Patient Record page",
             "match": {
               "location": "org.stepdefinitions.DeletePage.the_user_is_redirected_to_the_find_patient_record_page()"
@@ -1253,10 +1376,10 @@
           },
           {
             "result": {
-              "duration": 5918000000,
+              "duration": 3706000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "the user searches for the deleted patient using the patients \"honey\"",
             "match": {
               "arguments": [
@@ -1271,15 +1394,20 @@
           },
           {
             "result": {
-              "duration": 378000000,
+              "duration": 996000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "the patient should not be listed in the search results",
             "match": {
               "location": "org.stepdefinitions.DeletePage.the_patient_should_not_be_listed_in_the_search_results()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dashboard"
           }
         ]
       }
@@ -1289,6 +1417,15 @@
     "id": "delete-patient-record-and-verify-deletion",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/MRS_09_deleterecord.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@dashboard",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

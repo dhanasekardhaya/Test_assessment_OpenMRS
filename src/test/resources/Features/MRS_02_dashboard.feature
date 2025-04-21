@@ -1,3 +1,4 @@
+@dashboard
 Feature: Validate the dashboard page
 
   Scenario: Verify the dashboard after logging in with valid credentials

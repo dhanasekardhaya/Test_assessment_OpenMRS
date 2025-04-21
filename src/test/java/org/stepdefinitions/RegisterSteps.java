@@ -35,14 +35,14 @@ public class RegisterSteps extends Baseclass {
 				break;
 			case "familyname":
 				sendKeys(register.getFamilyName(), value);
-				String path = captureScreenshot("Demographics Details");
-				Hooks.test.info("Screenshot for Name page").addScreenCaptureFromPath(path);
+				//String path = captureScreenshot("Demographics Details");
+				//Hooks.test.info("Screenshot for Name page").addScreenCaptureFromPath(path);
 				clickEvent(register.getNextButton());
 				break;
 			case "gender":
 				selectClass(register.getSelectGender(), value);
-				String genderinfo = captureScreenshot("gender Details");
-				Hooks.test.info("Screenshot for Gender page").addScreenCaptureFromPath(genderinfo);
+				//String genderinfo = captureScreenshot("gender Details");
+				//Hooks.test.info("Screenshot for Gender page").addScreenCaptureFromPath(genderinfo);
 				clickEvent(register.getNextButton());
 				break;
 			case "birthday":
@@ -53,8 +53,8 @@ public class RegisterSteps extends Baseclass {
 				break;
 			case "birthyear":
 				sendKeys(register.getBirthdateYear(), value);
-				String birthdaypath = captureScreenshot("birth Details");
-				Hooks.test.info("Screenshot for Birth page").addScreenCaptureFromPath(birthdaypath);
+				//String birthdaypath = captureScreenshot("birth Details");
+				//Hooks.test.info("Screenshot for Birth page").addScreenCaptureFromPath(birthdaypath);
 				clickEvent(register.getNextButton());
 				break;
 			case "address":
@@ -74,14 +74,14 @@ public class RegisterSteps extends Baseclass {
 				break;
 			case "post":
 				sendKeys(register.getPostalCode(), value);
-				String infoPath = captureScreenshot("contact Info");
-				Hooks.test.info("Screenshot for contact page").addScreenCaptureFromPath(infoPath);
+				//String infoPath = captureScreenshot("contact Info");
+				//Hooks.test.info("Screenshot for contact page").addScreenCaptureFromPath(infoPath);
 				clickEvent(register.getNextButton());
 				break;
 			case "phone":
 				sendKeys(register.getPhoneNumber(), value);
-				String phonePath = captureScreenshot("phone Info");
-				Hooks.test.info("Screenshot for phone page").addScreenCaptureFromPath(phonePath);
+				//String phonePath = captureScreenshot("phone Info");
+				//Hooks.test.info("Screenshot for phone page").addScreenCaptureFromPath(phonePath);
 				clickEvent(register.getNextButton());
 				break;
 			case "relationshiptype":
@@ -89,8 +89,8 @@ public class RegisterSteps extends Baseclass {
 				break;
 			case "personname":
 				sendKeys(register.getPatientName(), value);
-				String relationalPath = captureScreenshot("Relational Info");
-				Hooks.test.info("Screenshot for Relational page").addScreenCaptureFromPath(relationalPath);
+				//String relationalPath = captureScreenshot("Relational Info");
+				//Hooks.test.info("Screenshot for Relational page").addScreenCaptureFromPath(relationalPath);
 				clickEvent(register.getNextButton());
 				break;
 			}
@@ -115,8 +115,8 @@ public class RegisterSteps extends Baseclass {
 
 		if (isFlag) {
 			clickEvent(register.getConfrimButton());
-			String alertPath = captureScreenshot("Alert Info");
-			Hooks.test.info("Screenshot for Alert page").addScreenCaptureFromPath(alertPath);
+			//String alertPath = captureScreenshot("Alert Info");
+			//Hooks.test.info("Screenshot for Alert page").addScreenCaptureFromPath(alertPath);
 		}
 
 	}

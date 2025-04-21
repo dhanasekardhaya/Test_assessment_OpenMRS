@@ -1,3 +1,4 @@
+@dashboard
 Feature: Upload patient Attachement
 
   Scenario: Uploading a valid attachment

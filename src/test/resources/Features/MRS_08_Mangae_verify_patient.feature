@@ -1,3 +1,4 @@
+@dashboard
 Feature: Manage and Verify Patient Visits
 
   Scenario: Merge visits and verify recent visit tags

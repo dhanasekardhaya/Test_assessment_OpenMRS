@@ -1,5 +1,10 @@
 package org.stepdefinitions;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.pom.ManageVerifyPatientPOM;
 import org.testng.Assert;
 import org.utils.Baseclass;
@@ -21,19 +26,21 @@ public class ManageVerifyPatient extends Baseclass {
 	public void the_user_verifies_that_the_recent_visits_section_has_two_entries_for_today_s_date_with_tags_and(
 			String vital, String attach) {
 		String actualvital = getText(manageVerifyPatient.getRecentvitalText());
+		jsElementHighlighted(manageVerifyPatient.getRecentvitalText());
 		Assert.assertEquals(actualvital, vital, "Text is mismatched");
 		String actualAttach = getText(manageVerifyPatient.getRecentAttachText());
+		jsElementHighlighted(manageVerifyPatient.getRecentAttachText());
 		Assert.assertEquals(actualAttach, attach, "Text is mismatched");
 	}
 
 	@When("the user clicks on {string}")
 	public void the_user_clicks_on(String buttons) {
-		if(buttons.equalsIgnoreCase("Merge Visits")) {
-			clickEvent(manageVerifyPatient.getMergeVisits());	
-		}else {
-			//clickEvent(manageVerifyPatient.getAddPast());
+		if (buttons.equalsIgnoreCase("Merge Visits")) {
+			clickEvent(manageVerifyPatient.getMergeVisits());
+		} else {
+			clickEvent(manageVerifyPatient.getAddPast());
 		}
-		
+
 	}
 
 	@When("the user selects the two visits and clicks on {string}")
@@ -52,18 +59,26 @@ public class ManageVerifyPatient extends Baseclass {
 	@Then("the Recent Visits section should display one entry for today's date with tags {string}")
 	public void the_recent_visits_section_should_display_one_entry_for_today_s_date_with_tags(String exceptedText) {
 		String actualText = getText(manageVerifyPatient.getVitalsText());
+		jsElementHighlighted(manageVerifyPatient.getVitalsText());
 		String[] split = actualText.split(",");
-		for(String x : split) {
-			if(x.contains(exceptedText)) {
+		for (String x : split) {
+			if (x.contains(exceptedText)) {
 				Assert.assertTrue(true);
 			}
 		}
 	}
 
-
 	@Then("the date picker should not allow selection of future dates")
 	public void the_date_picker_should_not_allow_selection_of_future_dates() {
-		
+		String currentDateFormatted = LocalDate.now().format(DateTimeFormatter.ofPattern("dd MMM yyyy"));
+		WebElement startDateField = driver.findElement(By.xpath("//input[@id='retrospectiveVisitStartDate-display']"));
+		String selectedStartDate = startDateField.getAttribute("value").trim();
+		WebElement endDateField = driver.findElement(By.xpath("//input[@id='retrospectiveVisitStopDate-display']"));
+		String selectedEndDate = endDateField.getAttribute("value").trim();
+		System.out.println(selectedStartDate + "   => " + selectedEndDate);
+		Assert.assertTrue(
+				selectedStartDate.equals(currentDateFormatted) && selectedEndDate.equals(currentDateFormatted));
+
 	}
 
 	@Then("the user clicks on the {string} button to return to the Patient Details page")

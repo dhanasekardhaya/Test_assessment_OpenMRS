@@ -6,6 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(features = "src/test/resources/features", 
 				dryRun = false, 
 				glue = "org.stepdefinitions", 
+				//tags= "@Login or @dashboard",
 				plugin = {"pretty", 
 						"html:src\\test\\resources\\Reports\\html\\testreport.html",
 						"json:src\\test\\resources\\Reports\\JSON\\reports.json",

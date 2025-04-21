@@ -26,6 +26,7 @@ public class PatientAttachmentPage extends Baseclass{
 	@Then("A recent visit with today's date and tag {string} should be listed")
 	public void a_recent_visit_with_today_s_date_and_tag_should_be_listed(String attachedContent) {
 		String actualText = getText(patientAttach.getAttachmentTag());
+		jsElementHighlighted(patientAttach.getAttachmentTag());
 		Assert.assertEquals(actualText, attachedContent, "verfied content");
 	}
 }

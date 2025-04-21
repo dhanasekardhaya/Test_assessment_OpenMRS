@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -46,6 +47,7 @@ public class Baseclass {
 			System.setProperty("webdriver.chrome.driver", ".\\driver\\chromedriver.exe");
 			driver = new ChromeDriver(options);
 			driver.manage().window().maximize();
+			wait = new WebDriverWait(driver, 20); 
 
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.chrome.driver", ".\\driver\\geckodriver.exe");
@@ -117,41 +119,59 @@ public class Baseclass {
 		Alert a = driver.switchTo().alert();
 		return a;
 	}
+	
+	public static WebElement waitToastpath() {
+		return driver.findElement(By.cssSelector("div.toast-item.toast-type-success>p"));
+
+	}
 
 	public static String waitToastText() {
-		wait = new WebDriverWait(driver, 10);
 		By toastLocator = By.cssSelector("div.toast-item.toast-type-success>p");
 		WebElement toastElement = wait.until(ExpectedConditions.visibilityOfElementLocated(toastLocator));
 		return toastElement.getText();
 
 	}
+	
+	public static boolean waitToastTextInvisible() {
+		return wait.until(
+				ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div.toast-item.toast-type-success>p")));
+
+	}
 
 	public static boolean waitLoader() {
-		wait = new WebDriverWait(driver, 10);
 		return wait.until(
 				ExpectedConditions.invisibilityOfElementLocated(By.xpath("//img[contains(@src, 'spinner.gif')]")));
 
 	}
 
 	public static void waitVisibleByFile() {
-		wait = new WebDriverWait(driver, 10);
-		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(
+		wait.until(ExpectedConditions.visibilityOfElementLocated(
 				By.xpath("//div[contains(@class, 'dz-default') and contains(text(), 'Click or')]")));
 	}
 
 	public static void waitVisibleByDialog() {
-		wait = new WebDriverWait(driver, 10);
-		WebElement modal = wait.until(ExpectedConditions.visibilityOfElementLocated(
+		wait.until(ExpectedConditions.visibilityOfElementLocated(
 				By.xpath("//div[@id='quick-visit-creation-dialog' and contains(@class, 'dialog')]")));
 
 	}
 	
 	public static void elementPresent() {
-		wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(
 			    By.xpath("//div[@id='visit-details']//div[contains(@class,'status-container')]"),
 			    "Active Visit"));
 
+	}
+	
+	public static boolean deletePresent() {
+		return wait.until(ExpectedConditions.textToBePresentInElementLocated(
+			    By.xpath("//table[@id='patient-search-results-table']/tbody/tr/td[@class='dataTables_empty']"),
+			    "No matching records found"));
+
+	}
+	
+	public static void jsElementHighlighted(WebElement element) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].style.border='2px solid green'", element);
 	}
 
 }

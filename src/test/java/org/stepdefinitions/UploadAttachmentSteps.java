@@ -36,6 +36,7 @@ public class UploadAttachmentSteps extends Baseclass {
 	@When("The user validate the text in alert {string}")
 	public void the_user_validate_the_text_in_alert(String alertTitle) {
 		String actual = getText(uploadAttachment.getGetModelText());
+		jsElementHighlighted(uploadAttachment.getGetModelText());
 		if (actual.contains(alertTitle)) {
 			Assert.assertTrue(true, "Valid Text");
 		}
@@ -46,6 +47,7 @@ public class UploadAttachmentSteps extends Baseclass {
 	public void the_user_navigate_to_the_attachment_section() {
 		clickEvent(uploadAttachment.getConfrimText());
 		String toastText = waitToastText();
+		jsElementHighlighted(waitToastpath());
 		clickEvent(uploadAttachment.getClickAttach());
 	}
 
@@ -73,6 +75,7 @@ public class UploadAttachmentSteps extends Baseclass {
 	@Then("The user see a success message confrim the upload {string}")
 	public void the_user_see_a_success_message_confrim_the_upload(String excptedText) {
 		String toastText = waitToastText();
+		jsElementHighlighted(waitToastpath());
 		clickEvent(uploadAttachment.getHomePage());
 		Assert.assertEquals(toastText, excptedText, "Valid Toasted Texted");
 	}

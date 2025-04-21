@@ -1,3 +1,4 @@
+@dashboard
 Feature: Delete Patient Record and Verify Deletion
 
   Scenario: Delete a patient and ensure the patient is no longer listed

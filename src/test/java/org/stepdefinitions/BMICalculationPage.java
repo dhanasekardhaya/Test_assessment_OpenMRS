@@ -15,11 +15,11 @@ public class BMICalculationPage extends Baseclass {
 	@Given("The user starts a new visit")
 	public void the_user_starts_a_new_visit() {
 		BMICalculation = new BMICalculationPOM();
-		clickEvent(BMICalculation.getStartVisit());
 	}
 
 	@Given("The user navigates to the Capture Vitals section")
 	public void the_user_navigates_to_the_capture_vitals_section() throws InterruptedException {
+		clickEvent(BMICalculation.getStartVisit());
 		waitVisibleByDialog();
 		clickEvent(BMICalculation.getConfrimButton());
 		elementPresent();

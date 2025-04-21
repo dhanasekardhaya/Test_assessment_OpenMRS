@@ -1,3 +1,4 @@
+@Login
 Feature: To vaild the login functionality of OpenMRS
 
   Scenario: To valid the login Functionality with valid credentials

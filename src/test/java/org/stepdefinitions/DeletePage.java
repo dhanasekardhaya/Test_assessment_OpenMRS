@@ -31,6 +31,11 @@ public class DeletePage extends Baseclass{
 	@Then("a toaster message should appear confirming the deletion")
 	public void a_toaster_message_should_appear_confirming_the_deletion() {
 		String toastText = waitToastText();
+		jsElementHighlighted(waitToastpath());
+		String path = captureScreenshot("Toasted Text for deleted");
+		Hooks.test.info("Deleted UserName").addScreenCaptureFromPath(path);
+		Assert.assertEquals(toastText, "Patient has been deleted successfully", "Invalid texted");
+		
 	}
 	@When("the user is redirected to the Find Patient Record page")
 	public void the_user_is_redirected_to_the_find_patient_record_page() {
@@ -44,9 +49,16 @@ public class DeletePage extends Baseclass{
 	}
 	@Then("the patient should not be listed in the search results")
 	public void the_patient_should_not_be_listed_in_the_search_results() {
-		waitLoader();
-		String deleteRecordText = getText(deletePage.getTableText());
-		Assert.assertTrue(deleteRecordText.contains(""));
+		boolean waitLoader = waitLoader();
+		if(waitLoader) {
+			boolean elementPresent1 = deletePresent();
+			if(elementPresent1) {
+				String deleteRecordText = getText(deletePage.getTableText());
+				
+				Assert.assertEquals(deleteRecordText, "No matching records found", "Invalid Message");
+			}
+			
+		}
 		
 	}
 

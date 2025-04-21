@@ -1,3 +1,4 @@
+@dashboard
 Feature: To validate the patient age in system based
 
   Scenario: Verify patient age is correctly

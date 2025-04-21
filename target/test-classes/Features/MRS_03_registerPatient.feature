@@ -1,3 +1,4 @@
+@dashboard
 Feature: The user Register a new patient in OpenMRS
 
   Scenario: Validate the register a patient with demographic and contact information

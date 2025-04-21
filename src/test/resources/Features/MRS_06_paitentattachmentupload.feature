@@ -1,3 +1,4 @@
+@dashboard
 Feature: Patient Attachment uploaded Verification
 
   Scenario: Verify uploaded attachment and recent visit entry
