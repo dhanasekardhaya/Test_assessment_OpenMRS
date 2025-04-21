@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-04-21T01:06:41.881Z",
+        "start_timestamp": "2025-04-21T01:13:14.707Z",
         "before": [
           {
             "result": {
-              "duration": 437000000,
+              "duration": 529000000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 879000000,
+              "duration": 742000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 280000000,
+              "duration": 301000000,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 392000000,
+              "duration": 268000000,
               "status": "passed"
             },
             "line": 6,
@@ -69,7 +69,7 @@
           },
           {
             "result": {
-              "duration": 379000000,
+              "duration": 3502000000,
               "status": "passed"
             },
             "line": 7,
@@ -81,7 +81,7 @@
           },
           {
             "result": {
-              "duration": 4288000000,
+              "duration": 17000000,
               "status": "passed"
             },
             "line": 8,
@@ -119,7 +119,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-04-21T01:06:48.630Z",
+        "start_timestamp": "2025-04-21T01:13:20.142Z",
         "before": [
           {
             "result": {
@@ -137,7 +137,7 @@
         "after": [
           {
             "result": {
-              "duration": 257000000,
+              "duration": 210000000,
               "status": "passed"
             },
             "match": {
@@ -150,7 +150,7 @@
         "steps": [
           {
             "result": {
-              "duration": 294000000,
+              "duration": 313000000,
               "status": "passed"
             },
             "line": 5,
@@ -162,7 +162,7 @@
           },
           {
             "result": {
-              "duration": 25051000000,
+              "duration": 10796000000,
               "status": "passed"
             },
             "line": 6,
@@ -174,7 +174,7 @@
           },
           {
             "result": {
-              "duration": 25000000,
+              "duration": 13000000,
               "status": "passed"
             },
             "line": 7,
@@ -212,7 +212,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-04-21T01:07:14.309Z",
+        "start_timestamp": "2025-04-21T01:13:31.526Z",
         "before": [
           {
             "result": {
@@ -230,7 +230,7 @@
         "after": [
           {
             "result": {
-              "duration": 189000000,
+              "duration": 241000000,
               "status": "passed"
             },
             "match": {
@@ -243,7 +243,7 @@
         "steps": [
           {
             "result": {
-              "duration": 19000000,
+              "duration": 17000000,
               "status": "passed"
             },
             "line": 5,
@@ -255,7 +255,7 @@
           },
           {
             "result": {
-              "duration": 3693000000,
+              "duration": 3478000000,
               "status": "passed"
             },
             "line": 6,
@@ -365,7 +365,7 @@
           },
           {
             "result": {
-              "duration": 373000000,
+              "duration": 280000000,
               "status": "passed"
             },
             "line": 23,
@@ -501,10 +501,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-04-21T01:07:18.609Z",
+        "start_timestamp": "2025-04-21T01:13:35.582Z",
         "before": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -519,7 +520,7 @@
         "after": [
           {
             "result": {
-              "duration": 266000000,
+              "duration": 205000000,
               "status": "passed"
             },
             "match": {
@@ -544,7 +545,7 @@
           },
           {
             "result": {
-              "duration": 34135000000,
+              "duration": 14843000000,
               "status": "passed"
             },
             "line": 6,
@@ -562,7 +563,7 @@
           },
           {
             "result": {
-              "duration": 53000000,
+              "duration": 47000000,
               "status": "passed"
             },
             "line": 7,
@@ -600,10 +601,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-04-21T01:07:53.089Z",
+        "start_timestamp": "2025-04-21T01:13:50.705Z",
         "before": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -618,7 +620,7 @@
         "after": [
           {
             "result": {
-              "duration": 340000000,
+              "duration": 337000000,
               "status": "passed"
             },
             "match": {
@@ -643,7 +645,7 @@
           },
           {
             "result": {
-              "duration": 185000000,
+              "duration": 171000000,
               "status": "passed"
             },
             "line": 6,
@@ -655,7 +657,7 @@
           },
           {
             "result": {
-              "duration": 96000000,
+              "duration": 164000000,
               "status": "passed"
             },
             "line": 7,
@@ -673,7 +675,7 @@
           },
           {
             "result": {
-              "duration": 16714000000,
+              "duration": 17805000000,
               "status": "passed"
             },
             "line": 8,
@@ -685,7 +687,7 @@
           },
           {
             "result": {
-              "duration": 6306000000,
+              "duration": 6107000000,
               "status": "passed"
             },
             "line": 9,
@@ -697,7 +699,7 @@
           },
           {
             "result": {
-              "duration": 10144000000,
+              "duration": 10077000000,
               "status": "passed"
             },
             "line": 10,
@@ -741,7 +743,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-04-21T01:08:26.901Z",
+        "start_timestamp": "2025-04-21T01:14:25.395Z",
         "before": [
           {
             "result": {
@@ -760,7 +762,7 @@
         "after": [
           {
             "result": {
-              "duration": 334000000,
+              "duration": 8022000000,
               "status": "passed"
             },
             "match": {
@@ -773,7 +775,7 @@
         "steps": [
           {
             "result": {
-              "duration": 310000000,
+              "duration": 297000000,
               "status": "passed"
             },
             "line": 5,
@@ -785,7 +787,7 @@
           },
           {
             "result": {
-              "duration": 275000000,
+              "duration": 219000000,
               "status": "passed"
             },
             "line": 6,
@@ -797,9 +799,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found\n  (Session info: chrome\u003d135.0.7049.96)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-28U849G\u0027, ip: \u0027192.168.1.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.42 (0f351bbd2617..., userDataDir: C:\\Users\\HP\\AppData\\Local\\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61661}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: cc7011a8c8adbb8252488869f703037d\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)\r\n\tat org.utils.Baseclass.jsElementHighlighted(Baseclass.java:174)\r\n\tat org.stepdefinitions.PatientAttachmentPage.a_recent_visit_with_today_s_date_and_tag_should_be_listed(PatientAttachmentPage.java:29)\r\n\tat ✽.A recent visit with today\u0027s date and tag \"Attachment Upload\" should be listed(file:///D:/Cucumbar/OpenMRS/src/test/resources/features/MRS_06_paitentattachmentupload.feature:7)\r\n",
-              "duration": 7054000000,
-              "status": "failed"
+              "duration": 84000000,
+              "status": "passed"
             },
             "line": 7,
             "name": "A recent visit with today\u0027s date and tag \"Attachment Upload\" should be listed",
@@ -842,10 +843,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-04-21T01:08:34.907Z",
+        "start_timestamp": "2025-04-21T01:14:34.057Z",
         "before": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -860,7 +862,7 @@
         "after": [
           {
             "result": {
-              "duration": 341000000,
+              "duration": 202000000,
               "status": "passed"
             },
             "match": {
@@ -873,7 +875,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5000000,
+              "duration": 7000000,
               "status": "passed"
             },
             "line": 5,
@@ -885,7 +887,7 @@
           },
           {
             "result": {
-              "duration": 17206000000,
+              "duration": 13575000000,
               "status": "passed"
             },
             "line": 6,
@@ -897,7 +899,7 @@
           },
           {
             "result": {
-              "duration": 675000000,
+              "duration": 473000000,
               "status": "passed"
             },
             "line": 7,
@@ -919,7 +921,7 @@
           },
           {
             "result": {
-              "duration": 181000000,
+              "duration": 182000000,
               "status": "passed"
             },
             "line": 8,
@@ -931,7 +933,7 @@
           },
           {
             "result": {
-              "duration": 166000000,
+              "duration": 155000000,
               "status": "passed"
             },
             "line": 9,
@@ -943,7 +945,7 @@
           },
           {
             "result": {
-              "duration": 13837000000,
+              "duration": 7782000000,
               "status": "passed"
             },
             "line": 10,
@@ -955,7 +957,7 @@
           },
           {
             "result": {
-              "duration": 14254000000,
+              "duration": 14519000000,
               "status": "passed"
             },
             "line": 11,
@@ -967,7 +969,7 @@
           },
           {
             "result": {
-              "duration": 422000000,
+              "duration": 91000000,
               "status": "passed"
             },
             "line": 12,
@@ -1015,7 +1017,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-04-21T01:09:22.038Z",
+        "start_timestamp": "2025-04-21T01:15:11.070Z",
         "before": [
           {
             "result": {
@@ -1034,7 +1036,7 @@
         "after": [
           {
             "result": {
-              "duration": 348000000,
+              "duration": 270000000,
               "status": "passed"
             },
             "match": {
@@ -1047,7 +1049,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 5,
@@ -1059,7 +1061,7 @@
           },
           {
             "result": {
-              "duration": 239000000,
+              "duration": 153000000,
               "status": "passed"
             },
             "line": 6,
@@ -1081,7 +1083,7 @@
           },
           {
             "result": {
-              "duration": 3784000000,
+              "duration": 2995000000,
               "status": "passed"
             },
             "line": 7,
@@ -1099,7 +1101,7 @@
           },
           {
             "result": {
-              "duration": 4788000000,
+              "duration": 4124000000,
               "status": "passed"
             },
             "line": 8,
@@ -1117,7 +1119,7 @@
           },
           {
             "result": {
-              "duration": 6089000000,
+              "duration": 8690000000,
               "status": "passed"
             },
             "line": 9,
@@ -1135,7 +1137,7 @@
           },
           {
             "result": {
-              "duration": 2298000000,
+              "duration": 88000000,
               "status": "passed"
             },
             "line": 10,
@@ -1159,10 +1161,11 @@
         ]
       },
       {
-        "start_timestamp": "2025-04-21T01:09:39.619Z",
+        "start_timestamp": "2025-04-21T01:15:27.423Z",
         "before": [
           {
             "result": {
+              "duration": 2000000,
               "status": "passed"
             },
             "match": {
@@ -1177,7 +1180,7 @@
         "after": [
           {
             "result": {
-              "duration": 274000000,
+              "duration": 230000000,
               "status": "passed"
             },
             "match": {
@@ -1190,7 +1193,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5000000,
+              "duration": 3000000,
               "status": "passed"
             },
             "line": 13,
@@ -1202,7 +1205,7 @@
           },
           {
             "result": {
-              "duration": 195000000,
+              "duration": 166000000,
               "status": "passed"
             },
             "line": 14,
@@ -1220,7 +1223,7 @@
           },
           {
             "result": {
-              "duration": 139000000,
+              "duration": 116000000,
               "status": "passed"
             },
             "line": 15,
@@ -1232,7 +1235,7 @@
           },
           {
             "result": {
-              "duration": 6713000000,
+              "duration": 7422000000,
               "status": "passed"
             },
             "line": 16,
@@ -1276,11 +1279,10 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2025-04-21T01:09:46.981Z",
+        "start_timestamp": "2025-04-21T01:15:35.384Z",
         "before": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -1295,7 +1297,7 @@
         "after": [
           {
             "result": {
-              "duration": 221000000,
+              "duration": 209000000,
               "status": "passed"
             },
             "match": {
@@ -1308,7 +1310,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 5,
@@ -1320,7 +1322,7 @@
           },
           {
             "result": {
-              "duration": 386000000,
+              "duration": 318000000,
               "status": "passed"
             },
             "line": 6,
@@ -1338,7 +1340,7 @@
           },
           {
             "result": {
-              "duration": 147000000,
+              "duration": 125000000,
               "status": "passed"
             },
             "line": 7,
@@ -1350,7 +1352,7 @@
           },
           {
             "result": {
-              "duration": 1647000000,
+              "duration": 897000000,
               "status": "passed"
             },
             "line": 8,
@@ -1362,7 +1364,7 @@
           },
           {
             "result": {
-              "duration": 79000000,
+              "duration": 63000000,
               "status": "passed"
             },
             "line": 9,
@@ -1374,7 +1376,7 @@
           },
           {
             "result": {
-              "duration": 3407000000,
+              "duration": 3706000000,
               "status": "passed"
             },
             "line": 10,
@@ -1392,7 +1394,7 @@
           },
           {
             "result": {
-              "duration": 1597000000,
+              "duration": 996000000,
               "status": "passed"
             },
             "line": 11,

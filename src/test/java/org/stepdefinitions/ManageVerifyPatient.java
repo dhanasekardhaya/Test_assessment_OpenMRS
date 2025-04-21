@@ -75,7 +75,6 @@ public class ManageVerifyPatient extends Baseclass {
 		String selectedStartDate = startDateField.getAttribute("value").trim();
 		WebElement endDateField = driver.findElement(By.xpath("//input[@id='retrospectiveVisitStopDate-display']"));
 		String selectedEndDate = endDateField.getAttribute("value").trim();
-		System.out.println(selectedStartDate + "   => " + selectedEndDate);
 		Assert.assertTrue(
 				selectedStartDate.equals(currentDateFormatted) && selectedEndDate.equals(currentDateFormatted));
 
